@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artivism for Democracy (AFD)</title>
+  <meta name="description" content="Artivism for Democracy — Reimagining civic expression through African art. One-page portfolio for residencies, showcases and community art." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff9f2;
+      --muted:#5b5b5b;
+      --accent1:#ffb400; /* deep yellow */
+      --accent2:#00a3ff; /* electric blue */
+      --accent3:#d93f6a; /* warm red */
+      --accent4:#16a085; /* emerald */
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.65);
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    body{font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg),#fff); color:#111}
+    a{color:inherit}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:40px 20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .mark{width:54px;height:54px;border-radius:8px;display:grid;place-items:center;font-weight:700;color:white;background:linear-gradient(135deg,var(--accent1),var(--accent3));box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    h1{font-family:'Montserrat',sans-serif;margin:0;font-size:1.5rem}
+    .tag{color:var(--muted);font-size:0.95rem}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;padding:36px 0}
+    .hero-grid{display:flex;flex-direction:column;gap:18px}
+    .hero h2{font-size:2rem;margin:0;line-height:1.05}
+    .lead{color:var(--muted);font-size:1rem}
+    .cta{display:inline-block;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent2),var(--accent4));color:white;text-decoration:none;font-weight:700}
+
+    /* Sections */
+    section{padding:40px 0;border-top:1px dashed rgba(0,0,0,0.03)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 24px rgba(16,24,40,0.04)}
+    .pill{display:inline-block;padding:6px 10px;background:var(--glass);border-radius:999px;font-weight:700}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery .item{height:140px;border-radius:10px;background:linear-gradient(135deg,var(--accent1),var(--accent3));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+
+    /* Artists */
+    .artists{display:flex;flex-wrap:wrap;gap:12px}
+    .artist{width:calc(33.333% - 8px);background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.4));border-radius:10px;padding:12px}
+    .artist h4{margin:6px 0 0 0}
+    .muted{color:var(--muted)}
+
+    /* Contact */
+    .contact{display:flex;gap:18px;flex-wrap:wrap}
+    .contact .info{flex:1}
+    .contact .form{flex:1;min-width:260px}
+    input, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #eee;font-family:inherit}
+    button{padding:10px 14px;border-radius:8px;border:none;background:linear-gradient(90deg,var(--accent3),var(--accent1));color:white;font-weight:700}
+
+    footer{padding:28px 0;color:var(--muted);font-size:0.9rem}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .artist{width:calc(50% - 8px)}
+    }
+    @media (max-width:520px){
+      .gallery{grid-template-columns:1fr}
+      .artist{width:100%}
+      header{flex-direction:column;align-items:flex-start;gap:10px}
+      .hero h2{font-size:1.6rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="mark">AFD</div>
+        <div>
+          <h1>Artivism for Democracy</h1>
+          <div class="tag">Reimagining civic expression through African art</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about" class="pill">About</a>
+        <a href="#work" class="pill">What We Do</a>
+        <a href="#artists" class="pill">Artists</a>
+        <a href="#gallery" class="pill">Gallery</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-grid">
+          <h2>Artivism for Democracy (AFD)</h2>
+          <p class="lead">A pan-African initiative transforming democratic ideas into lived, visual stories. We support residencies, workshops and exhibits that empower artists to shape civic imagination.</p>
+          <div>
+            <a href="#work" class="cta">Explore our programs</a>
+            <a href="#contact" class="pill" style="margin-left:12px">Join the community</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="grid">
+          <div class="card">
+            <h3>About AFD</h3>
+            <p class="muted">Artivism for Democracy (AFD) uses art, storytelling and digital media to inspire reflection and dialogue on democratic values. Through residencies, public showcases and online curation we amplify youth and women-led voices across Africa.</p>
+            <ul>
+              <li>Duration: 10 months (residency & showcase)</li>
+              <li>Participants: 15 emerging artivists</li>
+              <li>Primary location: Addis Ababa + online</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Why it matters</h3>
+            <p class="muted">Culture shapes how people imagine participation and rights. AFD centers creative practice as a way to deepen civic imagination, open dialogue, and document democratic experiences that are often left out of mainstream discourse.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <h3>What We Do</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>Residencies & Workshops</h4>
+            <p class="muted">Intensive mentorship and co-creation sessions where artists learn civic research methods, collaborative production, and digital storytelling techniques.</p>
+          </div>
+          <div class="card">
+            <h4>Exhibitions & Digital Showcases</h4>
+            <p class="muted">Hybrid public exhibits and an online gallery to share and document works produced during the program.</p>
+          </div>
+        </div>
+        <div style="height:10px"></div>
+        <div class="grid">
+          <div class="card">
+            <h4>Democracy Dialogues</h4>
+            <p class="muted">Public conversations that bring together artists, civic actors, and communities to reflect on the works and themes produced in the residency.</p>
+          </div>
+          <div class="card">
+            <h4>Community Storytelling</h4>
+            <p class="muted">Participatory projects that document local democratic experiences through photography, audio, and performance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="artists">
+        <h3>Artists & Community</h3>
+        <div class="artists">
+          <div class="artist card">
+            <strong>Apply</strong>
+            <h4>15 Emerging Artivists</h4>
+            <p class="muted">Open call and small grants to support diverse practices and backgrounds. Priority to women-led and youth-led initiatives.</p>
+          </div>
+          <div class="artist card">
+            <strong>Mentors</strong>
+            <h4>Seasoned Creatives</h4>
+            <p class="muted">Artists, curators and civic activists offering mentorship and critique sessions.</p>
+          </div>
+          <div class="artist card">
+            <strong>Partners</strong>
+            <h4>Community Hubs</h4>
+            <p class="muted">Local cultural centers and online platforms for exhibition and outreach.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h3>Gallery / Showcase</h3>
+        <p class="muted">A preview of works from the residency and community projects. (Replace placeholders with actual images.)</p>
+        <div class="gallery">
+          <div class="item">Installation</div>
+          <div class="item">Portrait</div>
+          <div class="item">Performance</div>
+          <div class="item">Photography</div>
+          <div class="item">Mixed Media</div>
+          <div class="item">Digital</div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h3>Contact / Join Us</h3>
+        <div class="contact">
+          <div class="info card">
+            <h4>Get in touch</h4>
+            <p class="muted">Email: <a href="mailto:artivismfordemocracy@gmail.com">artivismfordemocracy@gmail.com</a></p>
+            <p class="muted">Location: Addis Ababa, Ethiopia</p>
+            <p class="muted">Social: @ArtivismForDemocracy (coming soon)</p>
+          </div>
+
+          <form class="form card" onsubmit="event.preventDefault(); window.location='mailto:artivismfordemocracy@gmail.com?subject='+encodeURIComponent('AFD inquiry from '+(document.getElementById('name')?.value||''))+'&body='+encodeURIComponent(document.getElementById('message')?.value||'');">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="you@mail.com" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How would you like to collaborate?" required></textarea>
+            <div style="margin-top:10px"><button type="submit">Send Email</button></div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <strong>Artivism for Democracy (AFD)</strong> — 2025</div>
+        <div class="muted">Designed for grant applications & outreach | One-page portfolio</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
